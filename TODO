@@ -1,0 +1,39 @@
+
+Todo:
+  ✔ Setup the backend server for our application @done(19-10-11 11:43)
+  ✔ Design the UI for the Likert scale @started(19-09-17 14:53) @done(19-09-17 19:51) @lasted(4h58m47s)
+  ✔ User Login Page @done(19-10-03 21:15)
+  ✔ Convert csv file to json @done(19-10-02 12:02)
+  ✔ Improve UI for the nav bar @done(19-11-09 14:26)
+  ✔ Make the UI Responsive @done(19-11-10 01:33)
+  CheckBox:
+    ✔ Implement all the table options @started(19-10-01 12:49) @done(19-10-01 20:15) @lasted(7h26m5s)
+    ✔ Store the results in Redux @done(19-10-02 15:49)
+    ✔ Improve the UI @done(19-11-09 14:26)
+    ✔ Add a field to display the username @done(19-10-28 21:49)
+    ✔ Add a field to input the number of comparisons @done(19-10-28 21:49)
+  Backend Server:
+    ✔ Setup the database @started(19-09-24 16:33) @done(19-09-24 16:55) @lasted(22m24s)
+    ✔ Make a schema for the database @done(19-10-08 13:00)
+    ✔ Store the JSON ticket objects in the database @done(19-10-08 13:00)
+    ✔ Get and store the likert score results in the database @done(19-10-08 16:46)
+    ✔ Configure the API routes to communicate with the front end @done(19-10-16 20:23)
+    ✔ Export all the ticket results in csv @done(19-11-09 14:27)
+    ✔ Export ticket results per user in csv @done(19-10-29 14:29)
+  User Login Page:
+    For the user login page
+    ✔ Setup the UI for the login page @started(19-09-16 16:03) @done(19-09-16 16:41) @lasted(38m28s)
+    ✔ Configure the Authentication @done(19-10-03 21:15)
+  Ticket Object:
+    ✔ Implement all the input fields for the ticket @done(19-10-02 15:49)
+    ✔ Show which columns to show based on checkbox selection @done(19-10-02 15:49)
+    ✔ Design the UI to be displayed for the tickets @started(19-09-19 14:34) @done(19-09-19 14:59) @lasted(25m24s)
+    ✔ Show the data for each ticket field from the database @done(19-10-16 20:23)
+    ✔ Improve the UI @done(19-11-09 14:27)
+  Stretch Goals:
+    Only if the required functionality is completed and there is spare time
+    ✔ Deploy to Heroku @done(19-10-15 15:46)
+    ☐ Export data as JSON
+    ☐ Add a mechanism to store additional tickets through a CSV or JSON file upload
+    ☐ Add a page that shows the total number of tickets in the database
+  Archive:

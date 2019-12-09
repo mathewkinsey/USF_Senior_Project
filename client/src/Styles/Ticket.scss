@@ -1,0 +1,17 @@
+.Ticket{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-right: 15px;
+    margin-left: 10px;
+
+    div{
+        border-bottom: 1px rgba(0,0,0,0.3) solid;
+    }
+}
+@media only screen and (min-width: 768px){
+    .Ticket{
+        width: 25vw;
+        margin-right: 30px;
+    }
+}

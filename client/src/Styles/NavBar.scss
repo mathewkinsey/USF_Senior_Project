@@ -1,0 +1,76 @@
+@import "/colors";
+
+.NavBar{
+    position: fixed;
+    left: 0;
+    height: 80px;
+    width: 100vw;
+    background-color: $raisinBlack;
+    z-index: 10;
+    box-shadow: 3px 3px 10px #02010080;
+}
+.Nav-Flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+
+    button{
+        background: none;
+        border-style: none;
+        color: black;
+        font-size: 1rem;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition-duration: 0.3s;
+        transition-delay: 0.05s;
+        background-color: #db5375;
+
+        &:hover{
+            background-color: #ec9192;
+            cursor: pointer;
+        }
+    }
+}
+.Links{
+    text-decoration: none;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    transition-duration: 0.3s;
+    transition-delay: 0.05s;
+    text-align: center;
+
+    &:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+.active-selected{
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+.Nav-Flex > div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: gray;
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    .NavBar{
+        height: 100vh;
+        width: 20vw;
+    }
+    .Nav-Flex{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .Nav-Flex > div{
+        display: initial;
+    }
+}

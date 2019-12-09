@@ -1,0 +1,83 @@
+@import "/colors";
+
+.Default-ticket-msg{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
+    font-size: 15vw;
+    left: 3vw;
+    opacity: 0;
+    animation: fadeInLowerOpacity 0.4s ease-in 0.1s 1 forwards;
+
+    &:hover{
+        cursor: default;
+    }
+}
+.Ticket-Structure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 5vw;
+    top: 18vh;
+    width: 85vw;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.2s 1 forwards;
+}
+.Ticket-Data{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    overflow: auto;
+    
+    border-radius: $radius;
+}
+.Ticket-One{
+    position: absolute;
+    width: 39vw;
+    height: 62vh;
+    left: 4vw;
+    background-color: white;
+    top: 47vh;
+    z-index: -1;
+    border-radius: $radius;
+    box-shadow: 3px 3px 10px #02010080;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.2s 1 forwards;
+}
+.Ticket-Two{
+    position: absolute;
+    width: 39vw;
+    height: 62vh;
+    left: 44vw;
+    background-color: white;
+    top: 47vh;
+    z-index: -1;
+    border-radius: $radius;
+    box-shadow: 3px 3px 10px #02010080;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.2s 1 forwards;
+}
+@media only screen and (min-width: 768px){
+    .Ticket-Structure{
+        left: 25vw;
+        width: 60vw;
+        top: 0;
+    }
+    .Ticket-One{
+        left: 25vw;
+        top: 30vh;
+        width: 26vw;
+    }
+    .Ticket-Two{
+        left: 53vw;
+        top: 30vh;
+        width: 26vw;
+    }
+    .Default-ticket-msg{
+        font-size: 10vw;
+        left: 30vw;
+        top: 1vh;
+    }
+}

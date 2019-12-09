@@ -1,0 +1,47 @@
+@import "/colors";
+
+.Likert-Scale{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    
+    label{
+        margin-left: 2vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+}
+
+.Likert-Submit{
+    background-color: $lightGreen;
+    border-style: none;
+    color: white;
+    border-radius: $radius;
+    height: 5vh;
+    width: 15vw;
+    font-size: 3vw;
+    transition-duration: 0.3s;
+    margin-top: 4vh;
+    font-size: 3vw;
+    border-bottom: $bottomBorder;
+
+    &:hover{
+        background-color: rgb(145, 255, 0);
+        color: black;
+        box-shadow: 5px 10px 8px rgb(44, 43, 43);
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 768px){
+    .Likert-Scale{
+        p{
+            font-size: 1rem;
+        } 
+    }
+    .Likert-Submit{
+        font-size: 1rem;
+        margin-left: 1vw;
+        width: 10vw;
+    }
+}

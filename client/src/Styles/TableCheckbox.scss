@@ -1,0 +1,70 @@
+@import "/colors";
+
+.Form-Position{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35vh;
+    left: 15vw;
+    width: 70vw;
+    padding: 1%;
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: 3px 3px 10px #02010080;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.2s 1 forwards;
+
+    input{
+        background: none;
+        border-style: none;
+        background-color: #8dc63f;
+        color: black;
+        font-size: 1.5rem;
+        border-radius: $radius;
+        transition-duration: 0.3s;
+        transition-delay: 0.05s;
+        border-bottom: $bottomBorder;
+
+        &:hover{
+            background-color: #9dfff9;
+            box-shadow: 5px 10px 8px rgb(44, 43, 43);
+        }
+    }
+}
+.Checkboxes{
+    height: 50vh;
+    overflow: auto;
+}
+.Submit-check{
+    width: 95%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.user-stats{
+    position: absolute;
+    top: 15vh;
+    right: 35vw;
+    background-color: white;
+    border-radius: $radius;
+    padding: 1%;
+    border-radius: $radius;
+    box-shadow: 3px 3px 10px #02010080;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.4s 1 forwards;
+}
+@media only screen and (min-width: 768px){
+    .Form-Position{
+        width: 30vw;
+        left: 30vw;
+        top: 4vh;
+    }
+    .Submit-check{
+        width: 70%;
+    }
+    .user-stats{
+        font-size: 1.5rem;
+        right: 10vw;
+        top: 4vh;
+    }
+}

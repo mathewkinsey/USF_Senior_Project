@@ -1,0 +1,37 @@
+{
+  "name": "senior-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronax1/Senior-Project.git"
+  },
+  "author": "Jorge Villarreal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tronax1/Senior-Project/issues"
+  },
+  "homepage": "https://github.com/Tronax1/Senior-Project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "json2csv": "^4.5.4",
+    "mongoose": "^5.7.1",
+    "mssql": "^6.0.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

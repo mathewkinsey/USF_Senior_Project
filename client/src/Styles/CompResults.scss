@@ -1,0 +1,161 @@
+@import "/colors";
+
+.Comparison-Element{
+    display: flex;
+    flex-direction: row;
+    width: 160vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    transition-duration: 0.3s;
+    transition-delay: 0.01s;
+
+    &:hover{
+        background-color: $specialOrange;
+    }
+}
+.Top-Row{
+    display: flex;
+    flex-direction: row;
+    width: 160vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-left: 1vw;
+    font-size: 3vw;
+}
+.Top-Row > div{
+    width: 30vw;
+    &:hover{
+        cursor: default;
+    }
+}
+.Comparison-Element > div {
+    width: 28vw;
+    font-size: 3vw;
+    &:hover{
+        cursor: default;
+    }
+}
+.Comparison-Flex{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in 0.1s 1 forwards;
+    background-color: white;
+    border-radius: $radius;
+    box-shadow: 3px 3px 10px #02010080;
+}
+.All-Results{
+    height: 70vh;
+    overflow: auto;
+    width: 100%;
+}
+.Export-csv{
+    background: none;
+    border-style: none;
+    background-color: $lightGreen;
+    border-bottom: $bottomBorder;
+    border-radius: $radius;
+    font-size: 3vw;
+    transition-duration: 0.3s;
+    width: 40%;
+    margin-top: 10px;
+
+    &:hover{
+        background-color: #fdfffc;
+        box-shadow: 5px 10px 8px rgb(44, 43, 43);
+        cursor: pointer;
+    }
+}
+.Edit-btn{
+    background: none;
+    border-style: none;
+    background-color: $lightGreen;
+    border-bottom: $bottomBorder;
+    border-radius: $radius;
+    transition-duration: 0.3s;
+    width: 10vw;
+    font-size: 2vw;
+    height: 3vh;
+
+    &:hover{
+        background-color: rgb(145, 255, 0);
+        box-shadow: 5px 10px 8px rgb(44, 43, 43);
+        cursor: pointer;
+    }
+}
+.Delete-btn{
+    background: none;
+    border-style: none;
+    background-color: red;
+    border-bottom: solid 4px #8B0000 !important;
+    border-radius: $radius;
+    transition-duration: 0.3s;
+    width: 15vw;
+    font-size: 2vw;
+    height: 3vh;
+
+    &:hover{
+        background-color: pink;
+        box-shadow: 5px 10px 8px rgb(44, 43, 43);
+        cursor: pointer;
+    }
+}
+.date-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 2vh;
+    width: 70%;
+    margin-left: 4vw;
+}
+.date-form > span{
+    font-size: 3vw;
+}
+@media only screen and (min-width: 768px){
+    .Comparison-Flex{
+        width: 70vw;
+        left: 23vw;
+        top: 10vh;
+    }
+    .Export-csv{
+        width: 30%;
+        font-size: 1.5vw;
+    }
+    .Comparison-Element > div {
+        font-size: 1.1vw;
+        margin-left: 1vw;
+    }
+    .Edit-btn{
+        font-size: 1vw;
+        width: 4vw;
+        height: 4vh;
+    }
+    .Delete-btn{
+        font-size: 1vw;
+        width: 5vw;
+        height: 4vh;
+    }
+    .Comparison-Element{
+        width: 100%;
+    }
+    .Top-Row{
+        width: 98.5%;
+        font-size: 1vw;
+    }
+    .date-form{
+        flex-direction: row;
+    }
+    .date-form > span{
+        font-size: 1vw;
+        padding-top: 1.5vh;
+    }
+}

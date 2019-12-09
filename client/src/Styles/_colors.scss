@@ -1,0 +1,30 @@
+//UI Colors for sunview
+$specialOrange: #ea7125;
+$specialGray: #8c989e;
+$lightGray: #dadada;
+$raisinBlack: #212227;
+//Button colors
+$lightGreen: #8dc63f;
+$darkGreen: #3d7600;
+//Button Structure
+$radius: 10px;
+$bottomBorder: solid 4px $darkGreen !important;
+//Animations
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeInLowerOpacity{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+//Font
+$roboto: 'Roboto', sans-serif;

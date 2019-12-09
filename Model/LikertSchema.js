@@ -1,16 +1,18 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+//commented out due to change from json to mssql, left in case you wanted the example
 
-const LikertCard = new Schema({
-    ID1: String,
-    ID2: String,
-    user: String,
-    result: String,
-    selectedFields: String,
-    date: {
-        type: Date,
-        default: Date.now
-    }
-}, {collection: 'Comparison'});
+// const mongoose = require('mongoose');
+// const Schema = mongoose.Schema;
 
-module.exports = LikertCards = mongoose.model('LikertCard', LikertCard);
+// const LikertCard = new Schema({
+    // ID1: String,
+    // ID2: String,
+    // user: String,
+    // result: String,
+    // selectedFields: String,
+    // date: {
+        // type: Date,
+        // default: Date.now
+    // }
+// }, {collection: 'Comparison'});
+
+// module.exports = LikertCards = mongoose.model('LikertCard', LikertCard);

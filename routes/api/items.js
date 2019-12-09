@@ -3,7 +3,6 @@ const router = express.Router();
 const { Parser } = require('json2csv');
 const fs = require('fs')
 const path = require('path');
-var mysql = require('mysql');
 const fields = ['ID1', 'ID2', 'grader', 'result', 'date'];
 const opts = {fields};
 const sql = require('mssql')
